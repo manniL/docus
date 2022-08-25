@@ -7,7 +7,7 @@ fluid: true
 ---
 
 ::alert{type="warning"}
-This react page is imported from `content.nuxtjs.org` in order to test the page layout locally.
+This page is imported from `content.nuxtjs.org` in order to test the page layout locally.
 ::
 
 ## Play online

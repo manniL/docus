@@ -7,11 +7,3 @@ padded: false
 
 ::block-hero
 ::
-
-| test | test | test |
-| :--- | :--- | :--- |
-| test |      |      |
-| test |      |      |
-
-## test
-
