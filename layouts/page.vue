@@ -5,6 +5,7 @@ const { page } = useContent()
 <template>
   <Layout id="docus-page" class="flex flex-col min-h-screen">
     <Container :fluid="page.fluid" :constrained-class="page.constrainedClass" :padded="page.padded">
+      <div class="py-2">{{ page.readingTime }}</div>
       <slot />
     </Container>
   </Layout>
