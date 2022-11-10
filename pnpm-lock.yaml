@@ -6,6 +6,7 @@ specifiers:
   '@docsearch/js': ^3.3.0
   '@fontsource/inter': ^4.5.14
   '@iconify/vue': ^4.0.0
+  '@nuxt-themes/typography': ^0.0.11
   '@nuxt/content': ^2.2.1
   '@nuxthq/studio': ^0.1.3
   '@nuxtjs/algolia': ^1.1.4
@@ -33,6 +34,7 @@ dependencies:
   '@docsearch/js': 3.3.0_tbpndr44ulefs3hehwpi2mkf2y
   '@fontsource/inter': 4.5.14
   '@iconify/vue': 4.0.0_vue@3.2.44
+  '@nuxt-themes/typography': 0.0.11_vue@3.2.44
   '@nuxt/content': 2.2.1
   '@nuxtjs/algolia': 1.1.4_vue@3.2.44
   '@nuxtjs/color-mode': 3.1.8
@@ -696,6 +698,36 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+
+  /@nuxt-themes/tokens/1.1.4_vue@3.2.44:
+    resolution: {integrity: sha512-9J/3dUBoqd0i5vX0gOyHPPUmKrgKBgF+N4d6TffZHq6F3x+TFZ/jycQ+rvMsemi1/vKYztI+vz+KkJOOnex8KQ==}
+    dependencies:
+      '@nuxtjs/color-mode': 3.1.8
+      '@vueuse/core': 9.5.0_vue@3.2.44
+      pinceau: 0.6.15
+      style-value-types: 5.1.2
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - vue
+    dev: false
+
+  /@nuxt-themes/typography/0.0.11_vue@3.2.44:
+    resolution: {integrity: sha512-bwJ1zAClS5XgaU2WrOM/JLb672qMwW2ruJ46QF+qx8b64by8C4eRykDrAcSG8BGxvf/4qrxNnqREx96UgcDEbQ==}
+    dependencies:
+      '@nuxt-themes/tokens': 1.1.4_vue@3.2.44
+      '@nuxtjs/color-mode': 3.1.8
+      nuxt-icon: 0.1.7_vue@3.2.44
+      pinceau: 0.6.15
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - postcss
+      - rollup
+      - supports-color
+      - vue
+    dev: false
 
   /@nuxt/content/2.2.1:
     resolution: {integrity: sha512-vmBiKqNBXkjY0vQm07cifmh/OFOFiMdqfkQC7firBRI5DAl0Z7aHnrv5Z/8UWXcFduYWdEK62DfgaU7eci4OBg==}
@@ -4481,6 +4513,10 @@ packages:
       tslib: 2.4.1
     dev: false
 
+  /hey-listen/1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
+    dev: false
+
   /hogan.js/3.0.2:
     resolution: {integrity: sha512-RqGs4wavGYJWE07t35JQccByczmNUXQT0E12ZYV1VKYu5UiAU9lsos/yBAcf840+zrUQQxgVduCR5/B8nNtibg==}
     hasBin: true
@@ -6045,6 +6081,17 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /nuxt-icon/0.1.7_vue@3.2.44:
+    resolution: {integrity: sha512-JQ2OKKulcDAUMiPY3Q4YaXncL5de9fiVdrgXKnNZU3Cs2VbR//RAR9xt90+hpmVzDSdEB5UXIJLnWc5uBxm/hw==}
+    dependencies:
+      '@iconify/vue': 4.0.0_vue@3.2.44
+      '@nuxt/kit': 3.0.0-rc.13
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - vue
+    dev: false
 
   /nuxt/3.0.0-rc.12_rmayb2veg2btbq6mbmnyivgasy:
     resolution: {integrity: sha512-VhSod1u/w+C3VWsagTd5Prnsjk/VxPRt/bbADhUz3l0zxxajHRhHFX4xZSJWNgzsakducDqhn7N1pY6Ukko9kg==}
@@ -7853,6 +7900,13 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
+  /style-value-types/5.1.2:
+    resolution: {integrity: sha512-Vs9fNreYF9j6W2VvuDTP7kepALi7sk0xtk2Tu8Yxi9UoajJdEVpNpCov0HsLTqXvNGKX+Uv09pkozVITi1jf3Q==}
+    dependencies:
+      hey-listen: 1.0.8
+      tslib: 2.4.0
+    dev: false
+
   /stylehacks/5.1.1_postcss@8.4.18:
     resolution: {integrity: sha512-sBpcd5Hx7G6seo7b1LkpttvTz7ikD0LlH5RmdcBNb6fFR0Fl7LQwHDFr300q4cwUqi+IYrFGmsIHieMBfnN/Bw==}
     engines: {node: ^10 || ^12 || >=14.0}
@@ -8073,6 +8127,10 @@ packages:
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
 
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
